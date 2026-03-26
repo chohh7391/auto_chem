@@ -32,10 +32,10 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:author" content="Bohyeong Pak">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="Autonomous Chemistry Laboratory">
+  <meta property="article:tag" content="Task and Motion Planning">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -240,16 +240,16 @@
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="mailto:kingtyphoon@khu.ac.kr" target="_blank">Bohyeong Pak</a><sup>*</sup>,</span>
+                <a href="mailto:bhe1004@khu.ac.kr" target="_blank">Bohyeong Pak</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="mailto:kingtyphoon@khu.ac.kr" target="_blank">Hyunho Cho</a><sup>*</sup>,</span>
+                  <a href="mailto:chohh7391@khu.ac.kr" target="_blank">Hyunho Cho</a><sup>*</sup>,</span>
                   <span class="author-block">
                     <a href="mailto:kim87@khu.ac.kr" target="_blank">Sanghyun Kim</a><sup>†</sup>,</span>
                     </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institute<br>Submitted to Springer Applied Intelligence</span>
+                    <span class="author-block">Kyung Hee University<br>Submitted to Springer Applied Intelligence, 2026</span>
                     <!-- TODO: Remove this line if no equal contribution -->
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                       <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding Author</small></span>
@@ -283,7 +283,7 @@
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/rcilab/rci_rmrrt" target="_blank"
+                    <a href="https://github.com/rcilab/auto_chem" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -329,7 +329,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Autonomous chemistry laboratories can accelerate material discovery and improve experimental reproducibility, yet current systems remain limited in two respects: existing automation pipelines rely on protocol-specific equipment that restricts adaptability to diverse, non-linear workflows, and task and motion planning on robots with limited kinematic redundancy becomes unreliable when strict orientation, collision, and workspace constraints must be satisfied at once. This paper proposes LLM-Guided Tool-Aware TAMP (Task and Motion Planning), a hierarchical framework that combines large language model (LLM)-based symbolic reasoning with GPU-accelerated motion optimization for chemistry automation. The system converts natural-language experimental instructions into validated Chemical Description Language (XDL) protocols, selects appropriate end-effectors and plans obstacle rearrangement based on execution context, estimates the scene state through multi-view fiducial marker-based perception, and produces collision-free, constraint-satisfying trajectories by evaluating thousands of candidates in parallel. A sensor-driven skill library handles execution-level actions such as tool changing and adaptive pouring. On a 6-DoF manipulator, the GPU-parallelized planner achieves a 96.7% planning success rate under orientation constraints, up from 63.3% with a CPU-based sampling baseline, with lower planning-time variance. We build a high-fidelity simulation testbed in NVIDIA Isaac Sim for randomized trials and module-level ablation studies, and results confirm that the full framework executes complete chemical sequences involving tool switching, obstacle rearrangement, and multi-step reagent manipulation. The project page is available at: https://rcilab.github.io/auto_chem
+            Autonomous chemistry laboratories can accelerate material discovery and improve experimental reproducibility, yet current systems remain limited in two respects: existing automation pipelines rely on protocol-specific equipment that restricts adaptability to diverse, non-linear workflows, and task and motion planning on robots with limited kinematic redundancy becomes unreliable when strict orientation, collision, and workspace constraints must be satisfied at once. This paper proposes LLM-Guided Tool-Aware TAMP (Task and Motion Planning), a hierarchical framework that combines large language model (LLM)-based symbolic reasoning with GPU-accelerated motion optimization for chemistry automation. The system converts natural-language experimental instructions into validated Chemical Description Language (XDL) protocols, selects appropriate end-effectors and plans obstacle rearrangement based on execution context, estimates the scene state through multi-view fiducial marker-based perception, and produces collision-free, constraint-satisfying trajectories by evaluating thousands of candidates in parallel. A sensor-driven skill library handles execution-level actions such as tool changing and adaptive pouring. On a 6-DoF manipulator, the GPU-parallelized planner achieves a 96.7% planning success rate under orientation constraints, up from 63.3% with a CPU-based sampling baseline, with lower planning-time variance. We build a high-fidelity simulation testbed in NVIDIA Isaac Sim for randomized trials and module-level ablation studies, and results confirm that the full framework executes complete chemical sequences involving tool switching, obstacle rearrangement, and multi-step reagent manipulation. The project page is available at https://rcilab.github.io/auto_chem
           </p>
         </div>
       </div>
@@ -538,6 +538,61 @@
     </div>
   </div>
 </section>
+
+<!-- BibTex citation -->
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <svg class="svg-inline--fa fa-copy fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="copy" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"></path></svg><!-- <i class="fas fa-copy"></i> Font Awesome fontawesome.com -->
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
+        title={Instance-Enriched Semantic Maps for Visual Language Navigation},
+        author={Jiho Hong, Eunae Kang, Sanghyun Kim, Young-Sik Shin},
+        journal={Engineering Applications in Artificial Intelligence (EAAI)},
+        year={2026},
+        url={https://your-domain.com/your-project-page}
+      }</code></pre>
+    </div>
+</section>
+    
+<!-- People -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">People</h2>
+    
+        <div class="columns is-centered is-variable is-6">
+          <div class="column has-text-centered">
+            <img src="static/images/Bohyeong_Pak.jpg" alt="Bohyeong Pak" style="width: 100%; max-width: 220px; aspect-ratio: 3 / 4; object-fit: cover; margin: 0 auto; display: block;">
+            <p style="margin-top: 12px;">
+              <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Bohyeong Pak</a>
+            </p>
+          </div>
+    
+          <div class="column has-text-centered">
+            <img src="static/images/Hyunho_Cho.jpg" alt="Hyunho Cho" style="width: 100%; max-width: 220px; aspect-ratio: 3 / 4; object-fit: cover; margin: 0 auto; display: block;">
+            <p style="margin-top: 12px;">
+              <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Hyunho Cho</a>
+            </p>
+          </div>
+          
+          <div class="column has-text-centered">
+            <img src="static/images/Sanghyun_Kim.jpg" alt="Sanghyun Kim" style="width: 100%; max-width: 220px; aspect-ratio: 3 / 4; object-fit: cover; margin: 0 auto; display: block;">
+            <p style="margin-top: 12px;">
+              <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Sanghyun Kim</a>
+            </p>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
 
 
 
